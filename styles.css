@@ -93,3 +93,80 @@ footer {
     width: 100%;
     bottom: 0;
 }
+تصميم الرأس */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* تصميم الأقسام */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f0f0f0;
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+#apps {
+    background-color: #e0e0e0;
+}
+
+#contact {
+    background-color: #f9f9f9;
+}
+
+/* تصميم زر التحميل */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* تصميم قائمة التطبيقات */
+.app-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.app-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+.app-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* تصميم الفوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    }
