@@ -78,4 +78,13 @@ let countdownInterval = setInterval(function() {
     }
   }
 </script>
- 
+ <button onclick="addToFavorites('Yassine TV')">Add to Favorites</button>
+
+<script>
+  function addToFavorites(appName) {
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    favorites.push(appName);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }
+</script>
+
