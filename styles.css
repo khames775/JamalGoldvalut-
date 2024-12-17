@@ -268,3 +268,126 @@ footer {
     padding: 20px;
     margin-top: 50px;
         }
+/* أسلوب التصميم الأساسي */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f0f0f0, #b0b0b0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e3d58;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dark-mode-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.main-section {
+    text-align: center;
+    padding: 50px;
+}
+
+button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0055ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.app {
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.app h3 {
+    color: #0055ff;
+    font-size: 1.2em;
+}
+
+.app .app-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.download-link {
+    display: block;
+    margin-top: 10px;
+    color: #1e3d58;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1e3d58;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* وضع الليل */
+body.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+button.dark-mode-button {
+    background-color: #fff;
+    color: #333;
+}
+
+/* إضافة دائرة صفراء للعداد */
+#countdown {
+    font-size: 24px;
+    color: #000;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
