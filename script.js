@@ -58,3 +58,24 @@ let countdownInterval = setInterval(function() {
         clearInterval(countdownInterval);
     }
 }, 1000);
+<select id="language-select" onchange="changeLanguage()">
+  <option value="en">English</option>
+  <option value="ar">العربية</option>
+</select>
+
+<div id="app-title">Yassine TV</div>
+<div id="app-description">Watch your favorite channels live on Yassine TV app.</div>
+
+<script>
+  function changeLanguage() {
+    var lang = document.getElementById('language-select').value;
+    if (lang === 'ar') {
+      document.getElementById('app-title').innerText = 'تطبيق ياسين تي في';
+      document.getElementById('app-description').innerText = 'شاهد قنواتك المفضلة على تطبيق ياسين تي في.';
+    } else {
+      document.getElementById('app-title').innerText = 'Yassine TV';
+      document.getElementById('app-description').innerText = 'Watch your favorite channels live on Yassine TV app.';
+    }
+  }
+</script>
+ 
