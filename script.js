@@ -28,3 +28,33 @@ script src="script.js"></script>
 function scrollToApps() {
     document.getElementById("apps").scrollIntoView({ behavior: "smooth" });
 }
+// التبديل بين وضع النهار والليل
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('header').classList.toggle('dark-mode');
+    this.classList.toggle('dark-mode');
+    
+    // تغيير نص الزر بناءً على الوضع
+    if (document.body.classList.contains('dark-mode')) {
+        this.textContent = "وضع النهار";
+    } else {
+        this.textContent = "وضع الليل";
+    }
+});
+
+// إضافة العد التنازلي
+let countdownTime = 20;
+const countdownElement = document.createElement('div');
+countdownElement.id = 'countdown';
+countdownElement.textContent = countdownTime;
+
+document.body.appendChild(countdownElement);
+
+let countdownInterval = setInterval(function() {
+    countdownTime--;
+    countdownElement.textContent = countdownTime;
+    
+    if (countdownTime <= 0) {
+        clearInterval(countdownInterval);
+    }
+}, 1000);
