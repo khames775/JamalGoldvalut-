@@ -146,4 +146,160 @@
     <script src="script.js"></script>
 </body>
                                  </html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamalGoldVault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="logo">JamalGoldVault</div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">حول</a></li>
+                <li><a href="#apps">التطبيقات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الرئيسية -->
+    <section id="home">
+        <h1>مرحبًا بكم في JamalGoldVault</h1>
+        <p>اكتشف أفضل تطبيقات الأندرويد المميزة والآمنة!</p>
+        <button onclick="scrollToApps()">تصفح التطبيقات</button>
+    </section>
+
+    <!-- قسم حول -->
+    <section id="about">
+        <h2>حول الموقع</h2>
+        <p>JamalGoldVault هو موقع يتيح لك تحميل أفضل وأحدث تطبيقات الأندرويد بسهولة وأمان.</p>
+    </section>
+
+    <!-- قسم التطبيقات مع العداد -->
+    <section id="apps">
+        <h2>أفضل التطبيقات</h2>
+
+        <!-- العداد التنازلي (عدد التطبيقات) -->
+        <div id="countdown">
+            <p>العد التنازلي: <span id="timer">20</span> ثانية</p>
+        </div>
+
+        <div id="app-categories">
+            <!-- فئة تطبيقات التواصل الاجتماعي -->
+            <div class="app-category">
+                <h3>تطبيقات التواصل الاجتماعي</h3>
+                <div class="app-list">
+                    <div class="app-item">
+                        <img src="path_to_whatsapp_icon.jpg" alt="واتساب" class="app-icon">
+                        <h4>واتساب</h4>
+                        <p>الإصدار: 2.21.18.17</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.whatsapp" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_instagram_icon.jpg" alt="إنستجرام" class="app-icon">
+                        <h4>إنستجرام</h4>
+                        <p>الإصدار: 197.0.0.0.45</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_telegram_icon.jpg" alt="تيليجرام" class="app-icon">
+                        <h4>تيليجرام</h4>
+                        <p>الإصدار: 8.0</p>
+                        <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank"><button>تحميل</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- فئة تطبيقات الألعاب -->
+            <div class="app-category">
+                <h3>تطبيقات الألعاب</h3>
+                <div class="app-list">
+                    <div class="app-item">
+                        <img src="path_to_pubg_icon.jpg" alt="ببجي موبايل" class="app-icon">
+                        <h4>ببجي موبايل</h4>
+                        <p>الإصدار: 2.4</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.tencent.ig" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_freefire_icon.jpg" alt="فري فاير" class="app-icon">
+                        <h4>فري فاير</h4>
+                        <p>الإصدار: 1.92.1</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_cod_icon.jpg" alt="كول أوف ديوتي موبايل" class="app-icon">
+                        <h4>كول أوف ديوتي موبايل</h4>
+                        <p>الإصدار: 1.0.28</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" target="_blank"><button>تحميل</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- فئة تطبيقات الترفيه -->
+            <div class="app-category">
+                <h3>تطبيقات الترفيه</h3>
+                <div class="app-list">
+                    <div class="app-item">
+                        <img src="path_to_youtube_icon.jpg" alt="يوتيوب" class="app-icon">
+                        <h4>يوتيوب</h4>
+                        <p>الإصدار: 16.49.34</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_spotify_icon.jpg" alt="سبوتيفاي" class="app-icon">
+                        <h4>سبوتيفاي</h4>
+                        <p>الإصدار: 8.6.54</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.spotify.music" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_netflix_icon.jpg" alt="نتفليكس" class="app-icon">
+                        <h4>نتفليكس</h4>
+                        <p>الإصدار: 8.8.0</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient" target="_blank"><button>تحميل</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- فئة أدوات الإنتاجية -->
+            <div class="app-category">
+                <h3>أدوات الإنتاجية</h3>
+                <div class="app-list">
+                    <div class="app-item">
+                        <img src="path_to_google_drive_icon.jpg" alt="جوجل درايف" class="app-icon">
+                        <h4>جوجل درايف</h4>
+                        <p>الإصدار: 2.23.0.5</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_onedrive_icon.jpg" alt="مايكروسوفت ون درايف" class="app-icon">
+                        <h4>مايكروسوفت ون درايف</h4>
+                        <p>الإصدار: 6.23.0</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.microsoft.skydrive" target="_blank"><button>تحميل</button></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="path_to_office_icon.jpg" alt="مايكروسوفت أوفيس" class="app-icon">
+                        <h4>مايكروسوفت أوفيس</h4>
+                        <p>الإصدار: 16.0.14131.20198</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow" target="_blank"><button>تحميل</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- أسفل الصفحة -->
+    <footer>
+        <p>&copy; 2024 JamalGoldVault. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+    </html>
 
