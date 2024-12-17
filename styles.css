@@ -170,3 +170,18 @@ footer {
     text-align: center;
     padding: 10px;
     }
+    background-color: yellow;  /* لون الخلفية (الدائرة) */
+    border-radius: 50%;        /* جعل العداد دائرة */
+    width: 100px;              /* عرض العداد */
+    height: 100px;             /* ارتفاع العداد */
+    display: flex;             /* استخدام Flexbox لتوسيط المحتوى */
+    justify-content: center;   /* توسيط الأفقي */
+    align-items: center;       /* توسيط العمودي */
+    margin: 0 auto;            /* توسيط العداد بشكل كامل */
+}
+
+#countdown span {
+    font-size: 24px;           /* حجم الخط */
+    color: black;              /* لون الأرقام (أسود) */
+    font-weight: bold;         /* جعل الأرقام عريضة */
+}
