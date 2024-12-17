@@ -24,3 +24,7 @@ document.querySelectorAll('.app-item button').forEach(button => {
     });
 });
 script src="script.js"></script>
+// وظيفة التمرير إلى قسم التطبيقات
+function scrollToApps() {
+    document.getElementById("apps").scrollIntoView({ behavior: "smooth" });
+}
