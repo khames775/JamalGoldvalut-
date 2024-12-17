@@ -308,4 +308,114 @@ head>
     <title>JamalGoldVault</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamalGoldVault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- إعدادات واجهة الموقع -->
+    <header>
+        <div class="logo" style="color: #d4af37; font-size: 28px; font-weight: bold;">JamalGoldVault</div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#apps">التطبيقات</a></li>
+                <li><a href="#categories">الفئات</a></li>
+                <li><a href="#settings">الإعدادات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('ar')">العربية</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <!-- الشاشة الرئيسية -->
+    <section id="home" style="background: linear-gradient(to right, #d4af37, #444444); color: white; text-align: center; padding: 40px;">
+        <h1>مرحبًا بكم في JamalGoldVault</h1>
+        <p>أفضل موقع لتحميل التطبيقات الأكثر شهرة بأمان وسرعة.</p>
+        <button onclick="scrollToApps()" style="padding: 10px 20px; background: #0056b3; color: white; border: none;">تصفح التطبيقات</button>
+    </section>
+
+    <!-- فئات التطبيقات -->
+    <section id="categories" style="padding: 20px;">
+        <h2 style="color: #333333;">الفئات</h2>
+        <div class="category">
+            <h3 style="color: #0056b3;">تطبيقات المونتاج</h3>
+            <ul>
+                <li><a href="https://www.mediafire.com/file/CapCut.apk" target="_blank">CapCut - تحميل مباشر</a></li>
+                <li><a href="https://www.mediafire.com/file/AlightMotion.apk" target="_blank">Alight Motion - تحميل مباشر</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3 style="color: #0056b3;">التطبيقات الرياضية</h3>
+            <ul>
+                <li><a href="https://www.mediafire.com/file/YacineTV.apk" target="_blank">ياسين تيفي - مشاهدة المباريات</a></li>
+                <li><a href="https://www.mediafire.com/file/Ostora.apk" target="_blank">الأسطورة - بث مباشر</a></li>
+                <li><a href="https://www.mediafire.com/file/XtremeIPTV.apk" target="_blank">Xtreme IPTV - تحميل مباشر</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- التطبيقات مع الأيقونات -->
+    <section id="apps" style="padding: 20px;">
+        <h2 style="color: #333333;">أفضل التطبيقات</h2>
+        <div class="app-list">
+            <!-- CapCut -->
+            <div class="app-item" style="margin-bottom: 20px;">
+                <img src="icons/capcut.png" alt="CapCut" style="width: 60px; height: 60px;">
+                <h3 style="color: #0056b3;">CapCut</h3>
+                <p>أفضل تطبيق لتحرير الفيديوهات بطريقة احترافية.</p>
+                <a href="https://www.mediafire.com/file/CapCut.apk" target="_blank" style="color: #d4af37; text-decoration: none;">تحميل التطبيق</a>
+            </div>
+            <!-- ياسين تيفي -->
+            <div class="app-item" style="margin-bottom: 20px;">
+                <img src="icons/yacine.png" alt="ياسين تيفي" style="width: 60px; height: 60px;">
+                <h3 style="color: #0056b3;">ياسين تيفي</h3>
+                <p>شاهد المباريات الرياضية بجودة عالية وبدون تقطيع.</p>
+                <a href="https://www.mediafire.com/file/YacineTV.apk" target="_blank" style="color: #d4af37; text-decoration: none;">تحميل التطبيق</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الإعدادات -->
+    <section id="settings" style="padding: 20px;">
+        <h2 style="color: #333333;">الإعدادات</h2>
+        <div class="theme-toggle">
+            <p>تبديل الوضع:</p>
+            <button onclick="setTheme('light')" style="padding: 10px; background-color: #fff; border: 1px solid #ccc;">فاتح</button>
+            <button onclick="setTheme('dark')" style="padding: 10px; background-color: #333; color: #fff; border: none;">غامق</button>
+        </div>
+    </section>
+
+    <!-- سياسة الخصوصية -->
+    <section id="privacy" style="padding: 20px; background: #f9f9f9;">
+        <h2 style="color: #333333;">سياسة الخصوصية</h2>
+        <p>نحن نحترم خصوصيتك ونلتزم بعدم مشاركة أي بيانات خاصة مع أطراف خارجية. جميع التطبيقات المتاحة موثوقة ومحدثة بشكل مستمر.</p>
+    </section>
+
+    <!-- أسفل الصفحة -->
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        <p>&copy; 2024 JamalGoldVault. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- سكربتات التبديل -->
+    <script>
+        function setTheme(theme) {
+            if(theme === 'light') {
+                document.body.style.backgroundColor = "#ffffff";
+                document.body.style.color = "#000000";
+            } else {
+                document.body.style.backgroundColor = "#000000";
+                document.body.style.color = "#ffffff";
+            }
+        }
+    </script>
+</body>
+</html>
 
