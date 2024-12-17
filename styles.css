@@ -390,4 +390,75 @@ button.dark-mode-button {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    }
+
+body {
+  background-color: #fafafa; /* خلفية الموقع بلون فاتح */
+  color: #333; /* نص بلون داكن لسهولة القراءة */
+  font-family: 'Arial', sans-serif; /* خط موحد وجميل */
 }
+
+/* تصميم العناوين */
+.app-title {
+  color: #1E90FF; /* الأزرق الفاتح */
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* تأثير الظل لجعل النص بارزًا */
+}
+
+/* تصميم الوصف */
+.app-description {
+  color: #666; /* نص باللون الرمادي المتوسط */
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* خلفية التطبيقات */
+.app-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل خفيف يعطي بعدًا */
+  margin: 10px auto;
+  width: 90%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+/* تأثير عند التمرير فوق التطبيق */
+.app-container:hover {
+  transform: scale(1.05); /* تكبير طفيف عند التمرير */
+}
+
+/* تحسين الأيقونات */
+.icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: rotate(360deg); /* دوران الأيقونة عند التمرير */
+}
+
+/* تصميم العداد التنازلي */
+.countdown {
+  background-color: #FFD700; /* دائرة صفراء */
+  color: #000000; /* الأرقام باللون الأسود */
+  font-size: 1.5em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+    }
