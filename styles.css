@@ -220,3 +220,36 @@ footer {
     background: linear-gradient(135deg, #ff4500, #ffae00);
     transform: scale(1.05);
 }
+/* تحسين خلفية الصفحة */
+body {
+    background: linear-gradient(to bottom, #111, #222);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* تحسين عنوان الصفحة */
+h2 {
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffae00, 0 0 20px #ff4500;
+}
+
+/* تحسين أزرار التحميل */
+.download-btn {
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffae00, #ff4500);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+}
+
+/* تحسين شريط البحث */
+.search-container {
+    margin-top: 20px;
+}
+
