@@ -261,3 +261,116 @@ h2 {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+/* النمط العام */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f7f7f7;
+}
+
+/* قسم تطبيقات التواصل الاجتماعي */
+#social-media-apps {
+    background: linear-gradient(135deg, #ff8c00, #ff4500);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.app-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.app-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* قسم تسجيل الدخول */
+#login-section {
+    background: linear-gradient(135deg, #1e90ff, #ff6347);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-btn {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.google {
+    background: linear-gradient(135deg, #db4437, #ff6f00);
+}
+
+.twitter {
+    background: linear-gradient(135deg, #1da1f2, #00bfff);
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.login-btn:hover {
+    transform: scale(1.1);
+}
+
+/* أيقونة الإعدادات */
+.settings-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.settings-icon:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.icon-gear {
+    display: inline-block;
+    background: linear-gradient(145deg, #ff8c00, #ff4500);
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-gear:hover {
+    transform: rotate(180deg);
+}
