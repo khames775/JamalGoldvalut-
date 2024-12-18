@@ -462,3 +462,82 @@ body {
   margin-top: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
     }
+/* الخلفية العامة */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141E30, #243B55); /* ألوان متدرجة داكنة فخمة */
+    color: #ffffff; /* لون النص أبيض */
+    margin: 0;
+    padding: 0;
+}
+
+/* شريط العنوان */
+header {
+    background: linear-gradient(90deg, #00c6ff, #0072ff); /* تدرج أزرق جذاب */
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 2px solid #004ba0;
+}
+
+/* الأزرار */
+button, .btn {
+    background: linear-gradient(90deg, #ff9966, #ff5e62); /* تدرج برتقالي وأحمر */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(90deg, #ff5e62, #ff9966);
+    transform: scale(1.05);
+}
+
+/* عناوين الصفحات */
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #00eaff; /* تدرج أزرق سماوي فاتح */
+}
+
+/* محتوى النصوص */
+p {
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #dfe6e9; /* نص رمادي فاتح */
+}
+
+/* مربع المحتوى */
+.section-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* روابط التنقل */
+nav a {
+    color: #dfe6e9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00c6ff; /* تفاعل بالأزرق */
+}
