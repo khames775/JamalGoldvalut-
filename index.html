@@ -81,3 +81,23 @@
     </div>
     <button class="submit-rating">إرسال التقييم</button>
 </section>
+<script>
+    document.querySelector(".search-button").addEventListener("click", function () {
+        let searchInput = document.querySelector(".search-input").value.toLowerCase();
+        let apps = document.querySelectorAll(".app-item");
+        let found = false;
+
+        apps.forEach(app => {
+            if (app.textContent.toLowerCase().includes(searchInput)) {
+                app.style.display = "block";
+                found = true;
+            } else {
+                app.style.display = "none";
+            }
+        });
+
+        if (!found) {
+            alert("لم يتم العثور على تطبيق يطابق البحث.");
+        }
+    });
+</script>
