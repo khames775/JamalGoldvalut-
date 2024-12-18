@@ -87,4 +87,14 @@ let countdownInterval = setInterval(function() {
     localStorage.setItem('favorites', JSON.stringify(favorites));
   }
 </script>
+// يمكنك إضافة وظائف لجعل الأزرار تعمل مع Firebase أو باقي الخدمات.
+document.querySelector('.google').addEventListener('click', function () {
+    alert('تم تسجيل الدخول باستخدام جوجل');
+});
+document.querySelector('.twitter').addEventListener('click', function () {
+    alert('تم تسجيل الدخول باستخدام تويتر');
+});
+document.querySelector('.whatsapp').addEventListener('click', function () {
+    alert('تم تسجيل الدخول باستخدام واتساب');
+});
 
