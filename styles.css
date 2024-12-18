@@ -1,543 +1,110 @@
+/* تنسيق عام */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    direction: rtl; /* لكتابة النصوص من اليمين لليسار */
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
 }
 
 header {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2c3e50, #1a1a1a);
+    padding: 10px 20px;
 }
 
-header .logo {
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: 2px;
+.logo h1 {
+    font-size: 24px;
+    color: #f0b90b;
+    text-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
+}
+
+.logo span {
+    color: #fff;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.2em;
-}
-
-section {
-    padding: 40px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-section h1, section h2 {
-    font-size: 2em;
-    color: #333;
-}
-
-button {
-    background-color: #f1c40f;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #d4ac0d;
-}
-
-/* تنسيق قائمة التطبيقات */
-.app-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.app-item {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.app-item h3 {
-    color: #2c3e50;
-}
-
-.app-item p {
-    color: #7f8c8d;
-}
-
-footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-تصميم الرأس */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-header .logo {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/* تصميم الأقسام */
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#home {
-    background-color: #f0f0f0;
-}
-
-#about {
-    background-color: #ffffff;
-}
-
-#apps {
-    background-color: #e0e0e0;
-}
-
-#contact {
-    background-color: #f9f9f9;
-}
-
-/* تصميم زر التحميل */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* تصميم قائمة التطبيقات */
-.app-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.app-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-}
-
-.app-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/* تصميم الفوتر */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    }
-    background-color: yellow;  /* لون الخلفية (الدائرة) */
-    border-radius: 50%;        /* جعل العداد دائرة */
-    width: 100px;              /* عرض العداد */
-    height: 100px;             /* ارتفاع العداد */
-    display: flex;             /* استخدام Flexbox لتوسيط المحتوى */
-    justify-content: center;   /* توسيط الأفقي */
-    align-items: center;       /* توسيط العمودي */
-    margin: 0 auto;            /* توسيط العداد بشكل كامل */
-}
-
-#countdown span {
-    font-size: 24px;           /* حجم الخط */
-    color: black;              /* لون الأرقام (أسود) */
-    font-weight: bold;         /* جعل الأرقام عريضة */
-}
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #f0f0f0, #b0b0b0);
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #1e3d58;
-    padding: 10px;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.main-section {
-    text-align: center;
-    padding: 50px;
-}
-
-button a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #0055ff;
-    color: white;
-    border-radius: 5px;
-}
-
-.app-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.app {
-    text-align: center;
-    width: 25%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-
-.app h3 {
-    color: #0055ff;
-    font-size: 1.2em;
-}
-
-.app .app-icon {
-    width: 60px;
-    height: 60px;
-}
-
-.download-link {
-    display: block;
-    margin-top: 10px;
-    color: #1e3d58;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #1e3d58;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-        }
-/* أسلوب التصميم الأساسي */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #f0f0f0, #b0b0b0);
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #1e3d58;
-    padding: 10px;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.dark-mode-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.main-section {
-    text-align: center;
-    padding: 50px;
-}
-
-button a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #0055ff;
-    color: white;
-    border-radius: 5px;
-}
-
-.app-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.app {
-    text-align: center;
-    width: 25%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-
-.app h3 {
-    color: #0055ff;
-    font-size: 1.2em;
-}
-
-.app .app-icon {
-    width: 60px;
-    height: 60px;
-}
-
-.download-link {
-    display: block;
-    margin-top: 10px;
-    color: #1e3d58;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #1e3d58;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-/* وضع الليل */
-body.dark-mode {
-    background: #333;
-    color: #fff;
-}
-
-header.dark-mode {
-    background-color: #333;
-}
-
-button.dark-mode-button {
-    background-color: #fff;
-    color: #333;
-}
-
-/* إضافة دائرة صفراء للعداد */
-#countdown {
-    font-size: 24px;
-    color: #000;
-    background-color: yellow;
-    padding: 10px;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    }
-
-body {
-  background-color: #fafafa; /* خلفية الموقع بلون فاتح */
-  color: #333; /* نص بلون داكن لسهولة القراءة */
-  font-family: 'Arial', sans-serif; /* خط موحد وجميل */
-}
-
-/* تصميم العناوين */
-.app-title {
-  color: #1E90FF; /* الأزرق الفاتح */
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 15px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* تأثير الظل لجعل النص بارزًا */
-}
-
-/* تصميم الوصف */
-.app-description {
-  color: #666; /* نص باللون الرمادي المتوسط */
-  font-size: 1.1em;
-  text-align: center;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-/* خلفية التطبيقات */
-.app-container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل خفيف يعطي بعدًا */
-  margin: 10px auto;
-  width: 90%;
-  max-width: 300px;
-  transition: transform 0.3s ease;
-}
-
-/* تأثير عند التمرير فوق التطبيق */
-.app-container:hover {
-  transform: scale(1.05); /* تكبير طفيف عند التمرير */
-}
-
-/* تحسين الأيقونات */
-.icon {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  transition: transform 0.2s ease;
-}
-
-.icon:hover {
-  transform: rotate(360deg); /* دوران الأيقونة عند التمرير */
-}
-
-/* تصميم العداد التنازلي */
-.countdown {
-  background-color: #FFD700; /* دائرة صفراء */
-  color: #000000; /* الأرقام باللون الأسود */
-  font-size: 1.5em;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
-    }
-/* الخلفية العامة */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #141E30, #243B55); /* ألوان متدرجة داكنة فخمة */
-    color: #ffffff; /* لون النص أبيض */
-    margin: 0;
-    padding: 0;
-}
-
-/* شريط العنوان */
-header {
-    background: linear-gradient(90deg, #00c6ff, #0072ff); /* تدرج أزرق جذاب */
-    padding: 20px 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    border-bottom: 2px solid #004ba0;
-}
-
-/* الأزرار */
-button, .btn {
-    background: linear-gradient(90deg, #ff9966, #ff5e62); /* تدرج برتقالي وأحمر */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-button:hover, .btn:hover {
-    background: linear-gradient(90deg, #ff5e62, #ff9966);
-    transform: scale(1.05);
-}
-
-/* عناوين الصفحات */
-h1, h2, h3 {
-    text-align: center;
-    margin: 20px 0;
-    color: #00eaff; /* تدرج أزرق سماوي فاتح */
-}
-
-/* محتوى النصوص */
-p {
-    text-align: center;
-    margin: 10px 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #dfe6e9; /* نص رمادي فاتح */
-}
-
-/* مربع المحتوى */
-.section-box {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    margin: 10px auto;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* روابط التنقل */
-nav a {
-    color: #dfe6e9;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    color: #f0b90b;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #00c6ff; /* تفاعل بالأزرق */
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* الترحيب */
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: #f0b90b;
+    text-shadow: 0 0 15px #ffd700;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #f0b90b;
+    color: #111;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.hero-content .btn:hover {
+    background: #fff;
+    color: #111;
+    transform: scale(1.05);
+}
+
+/* قسم التطبيقات */
+.apps {
+    padding: 40px 20px;
+    text-align: center;
+    background: #1e1e2e;
+}
+
+.apps .app-card {
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #f0b90b;
+    color: #111;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
 }
