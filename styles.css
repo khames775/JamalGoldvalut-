@@ -1,376 +1,62 @@
-/* تنسيق عام */
+/* تنسيقات عامة */
 body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff, #f0f0f0);
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
 }
 
+/* رأس الصفحة */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #2c3e50, #1a1a1a);
-    padding: 10px 20px;
-}
-
-.logo h1 {
-    font-size: 24px;
-    color: #f0b90b;
-    text-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
-}
-
-.logo span {
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    padding: 20px;
+    text-align: center;
     color: #fff;
 }
 
-nav ul {
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
     gap: 15px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #f0b90b;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
+header nav ul li a {
     color: #fff;
-}
-
-/* الترحيب */
-.hero {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 36px;
-    color: #f0b90b;
-    text-shadow: 0 0 15px #ffd700;
-}
-
-.hero-content .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #f0b90b;
-    color: #111;
-    border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s;
 }
 
-.hero-content .btn:hover {
-    background: #fff;
-    color: #111;
-    transform: scale(1.05);
-}
-
-/* قسم التطبيقات */
-.apps {
-    padding: 40px 20px;
-    text-align: center;
-    background: #1e1e2e;
-}
-
-.apps .app-card {
-    background: #333;
-    border: 1px solid #444;
-    border-radius: 15px;
-    margin: 10px;
+/* الأقسام */
+main section {
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-download {
+.app {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: #f0b90b;
-    color: #111;
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.app img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background: #111;
-}
-
-.search-container {
-    text-align: center;
-    margin: 30px auto;
-    width: 80%;
-}
-
-/* عنوان البحث المتدرج */
-.search-title {
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #ffd700, #ffa700, #ff4500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
-}
-
-/* مربع الإدخال */
-.search-input {
-    width: 60%;
-    padding: 10px;
-    font-size: 18px;
-    border: 2px solid #444;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    outline: none;
-}
-
-/* زر البحث */
-.search-button {
-    padding: 10px 20px;
-    margin-left: 5px;
-    font-size: 18px;
+    background: #333;
     color: #fff;
-    background: linear-gradient(135deg, #ffae00, #ff4500);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
-    transition: all 0.3s ease;
-}
-
-.search-button:hover {
-    background: linear-gradient(135deg, #ff4500, #ffae00);
-    transform: scale(1.05);
-}
-/* تصميم القائمة */
-.apps-list {
     text-align: center;
-    margin: 30px 0;
-}
-
-.apps-list h2 {
-    font-size: 28px;
-    color: #ffd700;
-    text-shadow: 0 0 10px #ffae00;
-}
-
-.app-item {
-    background: #222;
-    color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px auto;
-    width: 60%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.download-btn {
-    background: linear-gradient(135deg, #ffae00, #ff4500);
-    color: #fff;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-    background: linear-gradient(135deg, #ff4500, #ffae00);
-    transform: scale(1.05);
-}
-
-.rating-section {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.rating-stars {
-    font-size: 30px;
-    color: #ffd700;
-    text-shadow: 0 0 10px #ffae00;
-    margin: 10px 0;
-}
-
-.submit-rating {
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #ffae00, #ff4500);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.submit-rating:hover {
-    background: linear-gradient(135deg, #ff4500, #ffae00);
-    transform: scale(1.05);
-}
-/* تحسين خلفية الصفحة */
-body {
-    background: linear-gradient(to bottom, #111, #222);
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* تحسين عنوان الصفحة */
-h2 {
-    color: #ffd700;
-    text-shadow: 0 0 10px #ffae00, 0 0 20px #ff4500;
-}
-
-/* تحسين أزرار التحميل */
-.download-btn {
-    font-size: 16px;
-    font-weight: bold;
-    background: linear-gradient(135deg, #ffae00, #ff4500);
-    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.download-btn:hover {
-    transform: scale(1.1);
-}
-
-/* تحسين شريط البحث */
-.search-container {
-    margin-top: 20px;
-}
-
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JamalGoldVault</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-/* النمط العام */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #f7f7f7;
-}
-
-/* قسم تطبيقات التواصل الاجتماعي */
-#social-media-apps {
-    background: linear-gradient(135deg, #ff8c00, #ff4500);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.app-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.app-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    width: 120px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.app-item img {
-    width: 60px;
-    height: 60px;
-}
-
-.app-item p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* قسم تسجيل الدخول */
-#login-section {
-    background: linear-gradient(135deg, #1e90ff, #ff6347);
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-.login-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.login-btn {
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 250px;
-}
-
-.google {
-    background: linear-gradient(135deg, #db4437, #ff6f00);
-}
-
-.twitter {
-    background: linear-gradient(135deg, #1da1f2, #00bfff);
-}
-
-.whatsapp {
-    background: linear-gradient(135deg, #25d366, #128c7e);
-}
-
-.login-btn:hover {
-    transform: scale(1.1);
-}
-
-/* أيقونة الإعدادات */
-.settings-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 50px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.settings-icon:hover {
-    transform: rotate(360deg) scale(1.2);
-}
-
-.icon-gear {
-    display: inline-block;
-    background: linear-gradient(145deg, #ff8c00, #ff4500);
-    border-radius: 50%;
-    padding: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.icon-gear:hover {
-    transform: rotate(180deg);
+    padding: 10px 0;
 }
