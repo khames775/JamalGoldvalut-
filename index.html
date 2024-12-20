@@ -3,61 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamal Gold Vault</title>
-    <link rel="stylesheet" href="style.css">
+    <title>موقع جديد 3D</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Jamal Gold Vault</h1>
-        <nav>
-            <ul>
-                <li><a href="#apps">تطبيقات التواصل الاجتماعي</a></li>
-                <li><a href="#comments">التعليقات</a></li>
-                <li><a href="#settings">الإعدادات</a></li>
-            </ul>
-        </nav>
+
+    <!-- الشريط العلوي مع الأيقونات -->
+    <header class="header">
+        <div class="icons">
+            <button id="theme-toggle" class="icon-btn">
+                <span id="theme-icon">☀️</span> <!-- أيقونة الوضع الليلي -->
+            </button>
+            <button class="settings-btn">
+                ⚙️
+            </button>
+        </div>
+        <h1>مرحباً في الموقع الجديد!</h1>
+        <p>تصميم 3D بألوان متدرجة مذهلة</p>
     </header>
 
-    <main>
-        <section id="apps">
-            <h2>تطبيقات التواصل الاجتماعي</h2>
-            <div class="app">
-                <img src="images/whatsapp.png" alt="WhatsApp">
-                <p>واتساب</p>
-            </div>
-            <div class="app">
-                <img src="images/facebook.png" alt="Facebook">
-                <p>فيسبوك</p>
-            </div>
-            <div class="app">
-                <img src="images/instagram.png" alt="Instagram">
-                <p>إنستجرام</p>
-            </div>
-            <div class="app">
-                <img src="images/twitter.png" alt="Twitter">
-                <p>تويتر</p>
-            </div>
-        </section>
-
-        <section id="comments">
-            <h2>التعليقات</h2>
-            <form>
-                <textarea placeholder="اكتب تعليقك هنا"></textarea>
-                <button type="submit">إرسال</button>
+    <!-- نموذج تسجيل الدخول -->
+    <section class="login-section">
+        <div class="login-box">
+            <h2>تسجيل الدخول</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="اسم المستخدم" required />
+                <input type="password" id="password" placeholder="كلمة المرور" required />
+                <button type="submit" class="submit-btn">تسجيل الدخول</button>
             </form>
-            <div id="comments-list">
-                <p>لا توجد تعليقات حتى الآن</p>
+            <div class="social-login">
+                <button class="social-btn google-btn">تسجيل الدخول عبر جوجل</button>
+                <button class="social-btn facebook-btn">تسجيل الدخول عبر فيسبوك</button>
             </div>
-        </section>
+            <p>ليس لديك حساب؟ <a href="#">تسجيل حساب جديد</a></p>
+        </div>
+    </section>
 
-        <section id="settings">
-            <h2>الإعدادات ⚙️</h2>
-            <p>يمكنك تخصيص إعدادات الموقع من هنا!</p>
-        </section>
-    </main>
-
+    <!-- تذييل الصفحة -->
     <footer>
-        <p>© 2024 Jamal Gold Vault. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2024 جميع الحقوق محفوظة</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+/your-project
+    /index.html
+    /styles.css
+    /script.js
+    
