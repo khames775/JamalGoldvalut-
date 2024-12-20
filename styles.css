@@ -1,62 +1,144 @@
-/* تنسيقات عامة */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #fff, #f0f0f0);
+
+/* إعدادات أساسية */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* رأس الصفحة */
-header {
-    background: linear-gradient(to right, #4CAF50, #8BC34A);
-    padding: 20px;
-    text-align: center;
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* الشريط العلوي */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2rem;
+    color: #fff;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.settings-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+header p {
+    font-size: 1rem;
+    color: #ffeb3b;
+    margin-top: 10px;
+}
+
+/* نموذج تسجيل الدخول */
+.login-section {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    width: 100%;
 }
 
-header nav ul li a {
+.login-box {
+    background: linear-gradient(135deg, #ff6a00, #ffcc00);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
+    font-size: 1.5rem;
     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* الأقسام */
-main section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.app {
-    display: inline-block;
-    margin: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.app img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ff9800;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.google-btn {
+    background-color: #db4437;
+}
+
+.google-btn:hover {
+    background-color: #c1351d;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.facebook-btn:hover {
+    background-color: #2d4373;
+}
+
+/* تذييل الصفحة */
 footer {
-    background: #333;
-    color: #fff;
+    position: absolute;
+    bottom: 10px;
     text-align: center;
-    padding: 10px 0;
+    width: 100%;
+    color: #ffeb3b;
+    font-size: 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
